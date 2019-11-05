@@ -12,7 +12,7 @@ def zfill(matrix, dim_v, dim_h):
     return matrix
 
 
-def structure_to_convmol(structure, properties, max_atoms=200, max_features=41, tolerance_distance=0.25):
+def structure_to_convmol(structure, properties=ELEMENTAL_PROPERTIES, max_atoms=200, max_features=41, tolerance_distance=0.25):
     atomic_radii = {
         'At': 1.50,
         'Bk': 1.70,
